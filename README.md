@@ -30,3 +30,6 @@
   GitHub: [segarrison](https://github.com/segarrison)
   email: s.garrison@gmail.com
   
+  ## Additional Notes:
+  This README was generated using this project. For a video of the project in action, please go [here](https://watch.screencastify.com/v/hugMQ0Dv8YrWSwdc5nfT)
+  
