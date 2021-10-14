@@ -33,7 +33,7 @@ const questions = [
   {
     type: "input",
     name: "test",
-    message: "Please provide test instructins: ",
+    message: "Please provide test instructions: ",
   },
   {
     type: "list",
@@ -56,7 +56,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
-  fs.writeToFile("READMEgen.md", generateMarkdown(data), (err) =>
+  fs.writeFile("READMEgen.md", generateMarkdown(data), (err) =>
     err ? console.log(err) : console.log("Succesfully created READMEgen.md!")
   );
 }
