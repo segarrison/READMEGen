@@ -1,0 +1,23 @@
+{
+  "name": "READMEGen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/segarrison/READMEGen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/segarrison/READMEGen/issues"
+  },
+  "homepage": "https://github.com/segarrison/READMEGen#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
