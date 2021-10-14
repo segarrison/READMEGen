@@ -21,7 +21,7 @@ function renderLicenseBadge(license) {
 function renderLicenseSection(license) {
   if (license == "MIT License" || "CC0 1.0 Universal") {
     return (
-      `##License
+      `## License
     ` + renderLicenseBadge(license)
     );
   } else {
@@ -31,9 +31,41 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return (
+    `# ${data.title}
 
-`;
+  ` +
+    renderLicenseSection(data.license) +
+    `
+
+  ## Description
+  ${data.description}
+
+  ## Table of Contents
+  * [Installation Information](#installation)
+  * [Usage](#usage)
+  * [Contribution Guidlines](#contribution)
+  * [Testing Instructions](#testing)
+  * [Questions](#questions)
+  <a name="installation"></a>
+  ## Installation Instructions
+  ${data.installation}
+  <a name="usage"></a>
+  ## Usage
+  ${data.usage}
+  <a name="contribution"></a>
+  ## Contribution Guidelines
+  ${data.contribution}
+  <a name="testing"></a>
+  ## Testing Instructions
+  ${data.test}
+  <a name="questions"></a>
+  ## Questions
+  If you have any questions about the project, please contact me at:
+  GitHub: [${data.gitHub}](https://github.com/${data.gitHub})
+  email: ${data.email}
+  `
+  );
 }
 
 module.exports = generateMarkdown;
